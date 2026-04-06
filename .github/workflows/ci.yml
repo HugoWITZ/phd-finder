@@ -15,6 +15,10 @@ jobs:
         run: uv sync --dev
       - name: Format check
         run: uv run ruff format --check src
+      - name: Lint
+        run: uv run ruff check src tests
+      - name: Unit tests
+        run: uv run pytest
       - name: Smoke test
         run: uv run python -m src.main ensure --universities ETHZ EPFL
 

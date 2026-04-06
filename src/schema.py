@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
-from typing import Iterable
-from urllib.parse import urlparse, urlunparse
 import re
+from collections.abc import Iterable
+from dataclasses import asdict, dataclass
+from urllib.parse import urlparse, urlunparse
 
 
 @dataclass(frozen=True)

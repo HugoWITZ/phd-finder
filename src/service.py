@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-from dataclasses import asdict
-from pathlib import Path
 import csv
 import json
+from dataclasses import asdict
+from pathlib import Path
 
 from src.adapters.epfl import collect_epfl_labs
 from src.adapters.ethz import collect_ethz_labs

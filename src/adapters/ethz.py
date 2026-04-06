@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin, urlparse
 import re
+from urllib.parse import urljoin, urlparse
+
 import requests
+from bs4 import BeautifulSoup
 
 from src.http_client import build_session
 from src.schema import LabEntry, canonicalize_url, is_valid_http_url, normalize_lab_name

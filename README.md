@@ -29,6 +29,8 @@ This makes later PhD-list extraction faster and more reliable because lab links 
 
 ```bash
 uv sync --dev
+uv run ruff check src tests
+uv run pytest
 uv run python -m src.main ensure --universities ETHZ EPFL
 uv run python -m src.main export --universities ETHZ EPFL
 uv run python -m src.main list --universities ETHZ
@@ -53,6 +55,7 @@ Local database:
 - Typed model (`LabEntry`) + normalization and dedup.
 - Persistent state in SQLite with source fingerprints and last update timestamps.
 - Separation of concerns: adapters, service layer, persistence, CLI.
+- CI quality gates: formatting, linting, unit tests, and CLI smoke test.
 
 ## Open-source contribution
 
