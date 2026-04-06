@@ -67,27 +67,6 @@ Local database:
 
 See `BACKLOG.md` for roadmap.
 
-## GitHub setup
-
-Create repo and push:
-
-```bash
-git init -b main
-git add .
-git commit -m "Initial open-source architecture"
-git remote add origin <your-repo-url>
-git push -u origin main
-```
-
-Protect `main` (only you can merge):
-
-1. GitHub repo settings -> Branches -> Add rule for `main`.
-2. Enable:
-   - Require a pull request before merging
-   - Require status checks to pass (`ci / lint-and-smoke`)
-   - Restrict who can push to matching branches
-3. Add only your GitHub user/team to the allowed list.
-
 ## License
 
 MIT (see `LICENSE`).
