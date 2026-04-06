@@ -1,0 +1,21 @@
+universities:
+  ETHZ:
+    seed_pages:
+      - https://ethz.ch/en/the-eth-zurich/organisation/departments-and-competence-centres/departments.html
+      - https://ethz.ch/en/the-eth-zurich/organisation/units-outside-the-departments.html
+      - https://ethz.ch/en/research/interdisciplinary-structures.html
+    allowed_domains:
+      - ethz.ch
+    keywords:
+      - lab
+      - laboratory
+      - institute
+      - center
+      - centre
+      - group
+      - robotics
+  EPFL:
+    seed_pages:
+      - https://www.epfl.ch/labs/
+    allowed_domains:
+      - epfl.ch
